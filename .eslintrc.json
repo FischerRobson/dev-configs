@@ -9,13 +9,14 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "rules": {
-    "linebreak-style": ["error", "windows"],
-    "indent": ["error", 2]
-  }
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "rules": {}
 }
